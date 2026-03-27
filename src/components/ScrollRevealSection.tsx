@@ -3,6 +3,7 @@ import { useScroll, useTransform, motion } from "motion/react";
 import company1 from "@/assets/company1.png";
 import company2 from "@/assets/company2.png";
 import company3 from "@/assets/company3.png";
+import flowLine from "@/assets/flow-1.png";
 
 export default function ScrollRevealSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -22,6 +23,13 @@ export default function ScrollRevealSection() {
 
   return (
     <section ref={containerRef} className="py-24 sm:py-32 px-6 sm:px-12 lg:px-20 bg-black relative overflow-hidden">
+      {/* Decorative flow line image – desktop only */}
+      <img
+        src={flowLine}
+        alt=""
+        aria-hidden="true"
+        className="hidden sm:block absolute left-32 top-0 h-full w-auto object-fill pointer-events-none z-0 select-none"
+      />
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="max-w-4xl mb-24 ml-auto px-6 lg:px-0">
           <p className="text-3xl sm:text-5xl lg:text-5xl font-['Satoshi:Medium',sans-serif] leading-[1.1] flex flex-wrap gap-x-[0.3em] gap-y-2">

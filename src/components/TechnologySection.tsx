@@ -3,6 +3,7 @@ import imgGroup1 from "../assets/Group1.png";
 import imgGroup2 from "../assets/Group2.png";
 import imgGroup3 from "../assets/Group3.png";
 import imgGroup4 from "../assets/Group4.png";
+import flowLine3 from "../assets/flow3.png";
 
 export default function TechnologySection() {
   const techItems = [
@@ -30,7 +31,14 @@ export default function TechnologySection() {
 
   return (
     <section id="technology" className="pt-24 pb-32 sm:pt-32 sm:pb-48 bg-black overflow-hidden relative px-6 sm:px-12 lg:px-20">
-      <div className="mx-auto max-w-7xl relative z-10">
+      {/* Decorative flow line – right side, desktop only */}
+      <img
+        src={flowLine3}
+        alt=""
+        aria-hidden="true"
+        className="hidden sm:block absolute right-32 top-0 h-full w-auto object-fill pointer-events-none z-0 select-none"
+      />
+      <div className="mx-auto max-w-7xl relative z-10 sm:pr-24">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-['Satoshi:Bold',sans-serif] text-white tracking-tight leading-[1.1] max-w-2xl">
             The Science Behind Our <br />

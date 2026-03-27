@@ -22,6 +22,7 @@ export default function SolutionsSection() {
 
   return (
     <section id="solutions" className="py-24 sm:py-32 bg-black overflow-hidden relative px-6 sm:px-12 lg:px-20">
+      {/* Decorative flow line – desktop only */}
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="mb-24">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-['Satoshi:Bold',sans-serif] text-white tracking-tight leading-[1.1] max-w-2xl">
