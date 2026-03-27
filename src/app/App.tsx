@@ -9,6 +9,7 @@ import SustainabilitySection from "../components/SustainabilitySection";
 import NewsroomSection from "../components/NewsroomSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import { Chatbot } from "../components/Chatbot";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <ContactSection />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

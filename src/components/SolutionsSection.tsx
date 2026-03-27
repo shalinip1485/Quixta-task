@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import imgImage42 from "@/assets/6cf7bc35191fce57f6e7cec8c210a9b2c9aae7f6.png";
-import imgImage43 from "@/assets/ca0655b7b0fe7896d3989815ebd3179ddd04ffd6.png";
+import imgImage42 from "../assets/company1.png";
+import imgImage43 from "../assets/company2.png";
 
 export default function SolutionsSection() {
   const solutions = [
