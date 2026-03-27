@@ -21,7 +21,7 @@ export default function SolutionsSection() {
   ];
 
   return (
-    <section id="solutions" className="py-24 sm:py-32 bg-black overflow-hidden relative min-h-screen px-6 sm:px-12 lg:px-20">
+    <section id="solutions" className="py-24 sm:py-32 bg-black overflow-hidden relative px-6 sm:px-12 lg:px-20">
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="mb-24">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-['Satoshi:Bold',sans-serif] text-white tracking-tight leading-[1.1] max-w-2xl">
@@ -33,7 +33,7 @@ export default function SolutionsSection() {
         <div className="space-y-32">
           {solutions.map((item, index) => (
             <div key={index} className="flex flex-col md:flex-row items-center md:items-start gap-12 lg:gap-24">
-              <div className="w-full md:w-1/3 flex justify-start md:justify-center">
+              <div className="w-full md:w-1/3 flex justify-start">
                 <img
                   src={item.logo}
                   alt={item.name}
@@ -41,7 +41,7 @@ export default function SolutionsSection() {
                 />
               </div>
 
-              <div className="w-full md:w-2/3">
+              <div className="w-full md:w-2/3 pr-6 sm:pr-12 lg:pr-32">
                 <h3 className="text-2xl sm:text-3xl font-['Satoshi:Bold',sans-serif] text-white mb-6 leading-tight">
                   {item.title}
                 </h3>
@@ -50,7 +50,7 @@ export default function SolutionsSection() {
                   {item.description}
                 </p>
 
-                <button className="bg-[#FF7300] text-white px-8 py-3 rounded-full font-['Satoshi:Medium',sans-serif] hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-lg text-sm tracking-wide">
+                <button className="bg-[#FF7300] text-white px-8 py-4 rounded-[12px] font-['Satoshi:Medium',sans-serif] hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-lg text-sm tracking-wide">
                   {item.buttonText}
                 </button>
               </div>

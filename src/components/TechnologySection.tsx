@@ -29,20 +29,20 @@ export default function TechnologySection() {
   ];
 
   return (
-    <section id="technology" className="py-24 sm:py-32 bg-black overflow-hidden relative">
-      <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20 relative z-10">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-8 mb-16">
+    <section id="technology" className="pt-24 pb-32 sm:pt-32 sm:pb-48 bg-black overflow-hidden relative px-6 sm:px-12 lg:px-20">
+      <div className="mx-auto max-w-7xl relative z-10">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-['Satoshi:Bold',sans-serif] text-white tracking-tight leading-[1.1] max-w-2xl">
             The Science Behind Our <br />
             Innovative Solutions
           </h2>
-          
-          <button className="bg-[#FF7300] text-white px-8 py-3 rounded-full font-['Satoshi:Medium',sans-serif] hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-lg text-sm tracking-wide">
+
+          <button className="bg-[#FF7300] text-white px-8 py-4 rounded-[12px] font-['Satoshi:Medium',sans-serif] hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-lg text-sm tracking-wide">
             Learn More
           </button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-4">
           {techItems.map((item, index) => (
             <motion.div
               key={index}
@@ -50,7 +50,7 @@ export default function TechnologySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative rounded-[60px] sm:rounded-[80px] overflow-hidden aspect-[4/5] sm:aspect-[4/4.5] flex flex-col justify-start p-10 sm:p-14 lg:p-16"
+              className="group relative rounded-[32px] sm:rounded-[48px] overflow-hidden flex flex-col justify-center px-10 py-14 sm:px-14 sm:py-20 lg:px-16 lg:py-24 border-[0.5px] border-[#F8F9FA33] h-full"
             >
               {/* Energy Background Image - Now Full Card */}
               <div className="absolute inset-0 z-0 pointer-events-none">
@@ -63,7 +63,7 @@ export default function TechnologySection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/20 to-transparent mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
               </div>
-              
+
               {/* Content Overlay */}
               <div className="relative z-10 h-full flex flex-col">
                 <h3 className="text-3xl sm:text-4xl font-['Satoshi:Bold',sans-serif] text-white mb-8 sm:mb-12 tracking-tight group-hover:translate-x-2 transition-transform duration-300">
